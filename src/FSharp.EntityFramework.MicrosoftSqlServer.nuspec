@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>FSharp.EntityFramework.MicrosoftSqlServer</id>
+    <version>0.0.1.1</version>
+    <title>FSharp.EntityFramework.MicrosoftSqlServer</title>
+    <authors>Dmitry Morozov</authors>
+    <owners>Dmitry Morozov</owners>
+    <licenseUrl>http://github.com/dmitry-a-morozov/Sandbox/blob/master/FSharp.EntityFramework.MicrosoftSqlServer/LICENSE.md</licenseUrl>
+    <projectUrl>http://github.com/dmitry-a-morozov/Sandbox/blob/master/FSharp.EntityFramework.MicrosoftSqlServer</projectUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>EntityFramework 7 DbContext scaffold for F#.</description>
+    <releaseNotes>Initial release.</releaseNotes>
+    <copyright>Copyright 2015</copyright>
+    <tags>F# FSharp TypeProvider Sql</tags>
+    <dependencies>
+      <group targetFramework=".NETFramework4.5.1">
+        <dependency id="EntityFramework.MicrosoftSqlServer" version="7.0.0-rc1-final" />
+        <dependency id="Inflector" version="1.0.0.0"/>
+      </group>
+    </dependencies>
+    <frameworkAssemblies>
+      <frameworkAssembly assemblyName="mscorlib" targetFramework=".NETFramework4.5.1" />
+      <frameworkAssembly assemblyName="System" targetFramework=".NETFramework4.5.1" />
+      <frameworkAssembly assemblyName="System.Core" targetFramework=".NETFramework4.5.1" />
+      <frameworkAssembly assemblyName="System.Data" targetFramework=".NETFramework4.5.1" />
+    </frameworkAssemblies>    
+  </metadata>
+  <files>
+    <file src="bin\Release\FSharp.EntityFramework.MicrosoftSqlServer.dll" target="lib\net451" />
+    <file src="bin\Release\FSharp.EntityFramework.MicrosoftSqlServer.pdb" target="lib\net451" />
+  </files>
+</package>
