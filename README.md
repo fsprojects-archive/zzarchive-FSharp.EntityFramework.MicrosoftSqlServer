@@ -19,7 +19,7 @@ developers can do better by leveraging unique design time mechamism called ["Typ
   - hierarchyid, sql_variant, geography, geometry, xml
   - others
 
-**Worth noting that the library doesn't attempt to extend or alter EF7 runtime semantics. 
+**Worth noting that the library doesn't attempt to extend or alter EF7 runtime semantics.**
 
 ### Nuget package 
 
