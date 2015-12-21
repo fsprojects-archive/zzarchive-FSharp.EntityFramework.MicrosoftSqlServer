@@ -2,7 +2,7 @@
 
 ### Background
 
-https://ef.readthedocs.org/en/latest/
+The latest and greatest version of ORM from Microsoft [EF7] (https://ef.readthedocs.org/en/latest/) ships with default CLI-based scaffolding https://ef.readthedocs.org/en/latest/getting-started/full-dotnet/existing-db.html
 
 ### Aim
 
