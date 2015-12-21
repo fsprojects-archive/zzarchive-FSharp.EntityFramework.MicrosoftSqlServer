@@ -6,8 +6,7 @@ https://ef.readthedocs.org/en/latest/
 
 ### Aim
 
-The latest and greatest version of ORM from Microsoft EF7 ships with [default CLI-based scaffolding] (https://ef.readthedocs.org/en/latest/getting-started/full-dotnet/existing-db.html). It works but F#
-developers can do better by leveraging unique design time mechamism called ["Type Providers"](https://msdn.microsoft.com/en-us/library/hh156509.aspx).
+EF7 ships with [default CLI-based scaffolding] (https://ef.readthedocs.org/en/latest/getting-started/full-dotnet/existing-db.html). It works but F# developers can do better by leveraging unique design time mechamism called ["Type Providers"](https://msdn.microsoft.com/en-us/library/hh156509.aspx).
 
 ##### Constrains of current version 
 
@@ -15,9 +14,9 @@ developers can do better by leveraging unique design time mechamism called ["Typ
 2. Sql Server only
 3. Full .NET framework only (Core CLR version will come once F# compiler provides supports for it)
 4. Limitations inherited from current RC1 version of EF7: 
-  - no VIEWs support
-  - hierarchyid, sql_variant, geography, geometry, xml
-  - others
+  * no VIEWs support
+  * hierarchyid, sql_variant, geography, geometry, xml
+  * others
 
 **Worth noting that the library doesn't attempt to extend or alter EF7 runtime semantics.**
 
