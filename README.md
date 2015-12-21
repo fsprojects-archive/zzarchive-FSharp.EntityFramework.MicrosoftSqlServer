@@ -60,5 +60,7 @@ let newShift =
 
 let change = db.``HumanResources.Shifts``.Add(newShift) 
 let recordsAffrected = db.SaveChanges()
+assert (recordsAffrected = 1)
+assert(change.Entity.ShiftID > 0uy)
 
 ```
