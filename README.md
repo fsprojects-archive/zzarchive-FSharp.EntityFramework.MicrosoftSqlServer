@@ -15,7 +15,7 @@ EF7 ships with [default CLI-based scaffolding] (https://ef.readthedocs.org/en/la
 3. Full .NET framework only (Core CLR version will come once F# compiler provides supports for it)
 4. Limitations inherited from current RC1 version of EF7: 
   * no VIEWs support
-  * hierarchyid, sql_variant, geography, geometry, xml
+  * hierarchyid, sql_variant, geography, geometry, xml are not yet supported
   * others
 
 **Worth noting that the library doesn't attempt to extend or alter EF7 runtime semantics.**
