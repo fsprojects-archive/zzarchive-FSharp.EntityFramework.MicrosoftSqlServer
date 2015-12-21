@@ -25,3 +25,27 @@ EF7 ships with [default CLI-based scaffolding] (https://ef.readthedocs.org/en/la
 https://www.nuget.org/packages/FSharp.EntityFramework.MicrosoftSqlServer
 
 ### Sample
+
+```F#
+
+open FSharp.Data.Entity
+
+type AdventureWorks = SqlServer<"Data Source=.;Initial Catalog=AdventureWorks2014;Integrated Security=True", Pluralize = true>
+
+let db = new AdventureWorks()
+
+db.OnModelCreating <- fun modelBuilder -> 
+    //override default model here
+    ()
+
+db.OnConfiguring <- fun optionsBuilder -> 
+    //do runtime configuration here: connection, transactoin etc.
+    optionsBuilder.UseSqlServer("Data Source=.;Initial Catalog=AdventureWorks2014;Integrated Security=True") |> ignore
+
+query {
+    for x in db.``HumanResources.Shifts`` do
+    where (x.ShiftID > 1uy)
+    select x.Name
+}
+|> Seq.iter (printfn "Shift: %s")
+```
