@@ -48,4 +48,17 @@ query {
     select x.Name
 }
 |> Seq.iter (printfn "Shift: %s")
+
+//insert
+let newShift = 
+    new AdventureWorks.``HumanResources.Shift``(
+        Name = "French coffee break", 
+        StartTime = TimeSpan.FromHours 10., 
+        EndTime = TimeSpan.FromHours 12.,
+        ModifiedDate = DateTime.Now
+    )
+
+let change = db.``HumanResources.Shifts``.Add(newShift) 
+let recordsAffrected = db.SaveChanges()
+
 ```
