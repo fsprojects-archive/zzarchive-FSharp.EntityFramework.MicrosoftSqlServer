@@ -21,7 +21,8 @@
 
 // !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 //Bizarre, but full path to Microsoft.Extensions.DependencyInjection.Abstractions.dll is required. #I directive doesn’t work :(
-#r @"C:\Users\mitekm\Documents\GitHub\Sandbox\FSharp.EntityFramework.MicrosoftSqlServer\packages\Microsoft.Extensions.DependencyInjection.Abstractions.1.0.0-rc1-final\lib\net451\Microsoft.Extensions.DependencyInjection.Abstractions.dll"
+#r @"..\..\packages\\Microsoft.Extensions.DependencyInjection.Abstractions.1.0.0-rc1-final\lib\net451\Microsoft.Extensions.DependencyInjection.Abstractions.dll"
+
 
 #r @"FSharp.EntityFramework.MicrosoftSqlServer.0.0.2.0-alpha\lib\net451\FSharp.EntityFramework.MicrosoftSqlServer.dll"
 

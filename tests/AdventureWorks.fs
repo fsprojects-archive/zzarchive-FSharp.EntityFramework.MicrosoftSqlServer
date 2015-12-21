@@ -97,7 +97,7 @@ let innerJoin() =
         query {
             for e in db.``HumanResources.Employees`` do
             join p in db.``Person.People`` on (e.BusinessEntityID = p.BusinessEntityID)
-            where (e.OrganizationLevel = Nullable(1s))
+            where (e.OrganizationLevel ?= 1s)
             sortBy p.LastName
             select(e.HireDate, String.Format("{0} {1}", p.FirstName, p.LastName))
         }
