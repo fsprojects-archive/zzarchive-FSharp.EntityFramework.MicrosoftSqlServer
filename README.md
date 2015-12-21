@@ -18,7 +18,7 @@ EF7 ships with [default CLI-based scaffolding] (https://ef.readthedocs.org/en/la
   * hierarchyid, sql_variant, geography, geometry, xml are not yet supported
   * others
 
-*Worth noting that the library doesn't attempt to extend or alter EF7 runtime semantics - it's purely design time tool.* 
+*Worth noting that type provider doesn't attempt to extend or alter EF7 runtime semantics - it's purely design time tool.* 
 
 ### Nuget package 
 
