@@ -6,10 +6,10 @@ https://ef.readthedocs.org/en/latest/
 
 ### Aim
 
-The latest and greatest version of ORM from Microsoft EF7 ships with [default CLI-based scaffolding] (https://ef.readthedocs.org/en/latest/getting-started/full-dotnet/existing-db.html)
+The latest and greatest version of ORM from Microsoft EF7 ships with [default CLI-based scaffolding] (https://ef.readthedocs.org/en/latest/getting-started/full-dotnet/existing-db.html). It works but F#
+developers can do better by leveraging unique design time mechamism called ["Type Providers"](https://msdn.microsoft.com/en-us/library/hh156509.aspx).
 
-
-Provide via F# type provider design-time types generation for EF7. Sql Server specific only.
+__Key limitations__:
 
 ### Nuget package 
 
