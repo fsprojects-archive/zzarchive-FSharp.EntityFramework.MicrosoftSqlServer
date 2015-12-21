@@ -13,13 +13,13 @@ developers can do better by leveraging unique design time mechamism called ["Typ
 
 1. EF7 or later (EF6 is not supporrted)
 2. Sql Server only
-3. Full .NET framework only (Core CLR vesrion will come once F# compiler supports it)
+3. Full .NET framework only (Core CLR version will come once F# compiler provides supports for it)
 4. Limitations inherited from current RC1 version of EF7: 
   - no VIEWs support
   - hierarchyid, sql_variant, geography, geometry, xml
   - others
 
-
+**Worth noting that the library doesn't attempt to extend or alter EF7 runtime semantics. 
 
 ### Nuget package 
 
