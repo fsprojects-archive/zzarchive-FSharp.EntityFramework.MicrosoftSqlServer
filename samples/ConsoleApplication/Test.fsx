@@ -46,5 +46,18 @@ query {
 }
 |> Seq.iter (printfn "Shift: %s")
 
+open System.Linq
+
+query {
+    for x in db.``Sales.SalesOrderHeaders`` do
+    groupBy x.ShipDate into g
+    sortByNullable g.Key
+    select (g.Key, g.Count())
+}
+|> Seq.toArray
+|> printfn "%A"
+
+
+
 
 

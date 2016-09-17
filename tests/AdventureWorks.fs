@@ -11,6 +11,10 @@ type AdventureWorks = SqlServer<"Data Source=.;Initial Catalog=AdventureWorks201
 let db = new AdventureWorks()
 
 [<Fact>]
+let test() = 
+    printfn "DbContextExtensions.Test: %i" <| "hello, world".Size()
+
+[<Fact>]
 let getTableContent() = 
     let expected = [|
         ( 1uy, "Day",  TimeSpan.Parse("07:00:00"), TimeSpan.Parse("15:00:00"), DateTime.Parse("2008-04-30"))

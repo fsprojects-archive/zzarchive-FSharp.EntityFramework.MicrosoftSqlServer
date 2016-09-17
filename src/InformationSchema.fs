@@ -244,6 +244,7 @@ type SqlConnection with
 	            JOIN sys.index_columns ON 
 		            index_columns.object_id = tables.object_id 
 		            AND index_columns.index_id = indexes.index_id 
+                    AND index_columns.is_included_column = 0
 	            JOIN sys.columns ON 
 		            columns.object_id = index_columns.object_id 
 		            AND columns.column_id = index_columns.column_id

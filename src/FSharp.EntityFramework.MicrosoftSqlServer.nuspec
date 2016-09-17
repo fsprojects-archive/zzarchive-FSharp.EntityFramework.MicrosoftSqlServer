@@ -6,8 +6,8 @@
     <title>FSharp.EntityFramework.MicrosoftSqlServer</title>
     <authors>Dmitry Morozov</authors>
     <owners>Dmitry Morozov</owners>
-    <licenseUrl>http://github.com/dmitry-a-morozov/Sandbox/blob/master/FSharp.EntityFramework.MicrosoftSqlServer/LICENSE.md</licenseUrl>
-    <projectUrl>http://github.com/dmitry-a-morozov/Sandbox/blob/master/FSharp.EntityFramework.MicrosoftSqlServer</projectUrl>
+    <licenseUrl>http://github.com/fsprojects/FSharp.EntityFramework.MicrosoftSqlServer/blob/master/LICENSE.md</licenseUrl>
+    <projectUrl>https://github.com/fsprojects/FSharp.EntityFramework.MicrosoftSqlServer</projectUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>EntityFramework 7 DbContext scaffold for F#.</description>
     <releaseNotes>Initial release.</releaseNotes>
